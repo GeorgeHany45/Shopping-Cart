@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="icon" href="Capture.PNG" type="image/png">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+ <nav>
+    <div class="header">
+        <h1>Shopping Cart</h1>
+    </div>
+    <div class="mainpage">
+        <a href="project.html">Main Page</a>
+    </div>
+    <div class="search">
+        <input type="text" id="search" class="searchtext" placeholder="Search for products...">
+        <button type="button" id ="search" class="searchbutton">Search</button>
+    </div>
+ </nav>
+ <div class ="categories">
+    <div class="prices">
+         <h3>Select Price Range</h3>
+         <input type="checkbox" id="under25" value="under25" data-type="price">
+         <label for="under25">Under $25</label>
+        <input type="checkbox" id="range" value="range" data-type="price" >
+        <label for="range">$25 to $50</label>
+        <input type="checkbox" id="above25" value="above50" data-type="price">
+        <label for="abov50">Above $50</label>
+    </div>
+    <div class="categorytype">
+        <h3>Select Category Type</h3>
+        <input type="checkbox" id="beauty" value ="beauty" data-type="category">
+        <label for ="beauty">Beauty</label>
+        <input type="checkbox" id="fragrances" value="fragrances" data-type="category">
+        <label for="fragrances">Fragrances</label>
+        <input type="checkbox" id="furniture" value="furniture" data-type="category">
+        <label for="furniture">Furniture</label>
+         <input type="checkbox" id="groceries" value="groceries" data-type="category">
+        <label for="groceries">Groceries</label>
+    </div>  
+ </div>
+ <div class="products" id="products"></div>
+ <div class="cart">
+    <div class="cartbox">
+    </div>
+   
+ </div>
+ <script src="project.js"></script>
+</body>
+</html>
